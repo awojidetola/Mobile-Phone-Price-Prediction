@@ -11,7 +11,7 @@ def add_bg_from_url():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://wallpaperaccess.com/full/3804605.jpg");
+             background-image: url("https://wallpaperaccess.com/full/247821.jpg");
              background-attachment: fixed;
              background-size: cover
          }}
@@ -88,7 +88,6 @@ else:
 
 hide_streamlit_style = """
             <style>
-            #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
             </style>
             """
