@@ -4,10 +4,38 @@ import numpy as np
 import sklearn
 import pickle
 
-
 model = pickle.load(open('model.pkl','rb'))
 
+def add_bg_from_url():
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://wallpaperaccess.com/full/3804605.jpg");
+             background-attachment: fixed;
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
+
+add_bg_from_url() 
+
 st.title("Phone Price Range Prediction")
+
+st.markdown(" This is a simple web application that predicts the price range of your mobile phone based on the phone's specifications.")
+st.markdown("The price ranges are given as follows: ")
+st.markdown(
+"""
+* Low Cost
+* Medium Cost
+* High Cost
+* Very High Cost
+""")
+
+st.markdown("The data used for this project was collected from [Kaggle](https://www.kaggle.com/datasets/iabhishekofficial/mobile-price-classification) and machine learning was employed to predict the price ranges based on the data obtained.")
+
 battery_power = st.number_input("Enter Battery Power in mAh")
 bluetooth = st.selectbox("Does your phone have bluetooth?", ("Yes","No"))
 if bluetooth == "Yes":
@@ -58,12 +86,6 @@ if w == "Yes":
 else:
     wifi = 0
 
-
-
-
-
-
-
 hide_streamlit_style = """
             <style>
             #MainMenu {visibility: hidden;}
@@ -71,3 +93,24 @@ hide_streamlit_style = """
             </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+
+data = [[battery_power, blue, clock_speed, dual_sim, fc, four_g, int_memory, m_dep, mobile_wt, n_cores, pc, px_height, px_width,ram, sch, scw, talk_time, three_g, touch_screen, wifi]]
+
+result = model.predict(data)
+
+if result[0] == 0:
+    result_2 = "Low Cost"
+
+elif result [1] == 1:
+    result_2 = "Medium Cost"
+
+elif result [2] == 2:
+    result_2 = "High Cost"
+
+else:
+    result_2 = "Very High Cost"
+
+if st.button('Submit'):
+     st.write("Your Phone has a {} Price Range".format(result_2))
+else:
+     st.write('')
