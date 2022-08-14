@@ -100,10 +100,10 @@ result = model.predict(data)
 if result[0] == 0:
     result_2 = "Low Cost"
 
-elif result [1] == 1:
+elif result[0] == 1:
     result_2 = "Medium Cost"
 
-elif result [2] == 2:
+elif result [0] == 2:
     result_2 = "High Cost"
 
 else:
