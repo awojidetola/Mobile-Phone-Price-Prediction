@@ -11,7 +11,7 @@ def add_bg_from_url():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://cdn.wallpapersafari.com/34/5/pGOKcN.jpg");
+             background-image: url("https://img.freepik.com/free-photo/pink-defocused-glittery-background-design_53876-104793.jpg");
              background-attachment: fixed;
              background-size: cover
          }}
