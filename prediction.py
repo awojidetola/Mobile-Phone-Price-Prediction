@@ -6,22 +6,6 @@ import pickle
 
 model = pickle.load(open('model.pkl','rb'))
 
-def add_bg_from_url():
-    st.markdown(
-         f"""
-         <style>
-         .stApp {{
-             background-image: url("https://img.freepik.com/free-photo/pink-defocused-glittery-background-design_53876-104793.jpg");
-             background-attachment: fixed;
-             background-size: cover
-         }}
-         </style>
-         """,
-         unsafe_allow_html=True
-     )
-
-add_bg_from_url() 
-
 st.title("Phone Price Range Prediction")
 
 st.markdown(" This is a simple web application that predicts the price range of your mobile phone based on the phone's specifications.")
