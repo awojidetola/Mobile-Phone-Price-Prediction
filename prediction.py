@@ -18,7 +18,7 @@ st.markdown(
 * Very High Cost
 """)
 
-st.markdown("The data used for this project was collected from [Kaggle](https://www.kaggle.com/datasets/iabhishekofficial/mobile-price-classification) and machine learning was employed to predict the price ranges based on the data obtained. You can find the full project (with codes) [here](https://github.com/awojidetola/Mobile-Phone-Price-Prediction)")
+st.markdown("The data used for this project was collected from [Kaggle](https://www.kaggle.com/datasets/iabhishekofficial/mobile-price-classification) and machine learning was employed to predict the price ranges based on the data obtained. You can find the full project (with codes) on [GitHub](https://github.com/awojidetola/Mobile-Phone-Price-Prediction)")
 
 battery_power = st.number_input("Enter Battery Power in mAh")
 bluetooth = st.selectbox("Does your phone have bluetooth?", ("Yes","No"))
