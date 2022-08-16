@@ -13,15 +13,19 @@ The data used for this project was collected from [Kaggle](https://www.kaggle.co
 This is the notebook file containing the codes for data analysis and Machine Learning modellling for the project
 
 + Train.csv & Test.csv
+
 The dataset collected from Kaggle for training, testing and validation
 
 + Price_Range_Test.csv
+
 The predicted values of the test dataset
 
 + Model.pkl
+
 This is the best model saved as a pickle file for reproduction and deployment 
 
 + prediction.py
+
 The python file in preparation for model deployment using streamlit
 
 
