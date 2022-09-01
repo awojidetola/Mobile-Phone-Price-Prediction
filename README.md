@@ -6,9 +6,9 @@ In this project, the price ranges of mobile phones are predicted based on the fe
 + High Cost 
 + Very High Cost
 
-The data used for this project was collected from [Kaggle](https://www.kaggle.com/datasets/iabhishekofficial/mobile-price-classification) and deployed to Streamlit [here](https://awojidetola-mobile-phone-price-prediction-prediction-mma8kw.streamlitapp.com/)
+The data used for this project was collected from [Kaggle](https://www.kaggle.com/datasets/iabhishekofficial/mobile-price-classification) and deployed to Streamlit https://awojidetola-mobile-phone-price-prediction-prediction-mma8kw.streamlitapp.com
 
-## Navigatin
+## Navigation
 + Mobile Price Classification Project.ipynb
 This is the notebook file containing the codes for data analysis and Machine Learning modellling for the project
 
