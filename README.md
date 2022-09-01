@@ -10,9 +10,9 @@ The data used for this project was collected from [Kaggle](https://www.kaggle.co
 
 It was deployed to Streamlit as a web application here: https://awojidetola-mobile-phone-price-prediction-prediction-mma8kw.streamlitapp.com
 
-![image](https://user-images.githubusercontent.com/49078266/187940597-ae636cc8-ffe8-4917-ba86-5282595aae6f.png)
+![image](https://user-images.githubusercontent.com/49078266/187940944-a1dea570-951c-4c23-b1d2-b49cf68b4843.png)
+![image](https://user-images.githubusercontent.com/49078266/187941037-cf6baf00-f4b0-4ed4-bc0c-7b63de7678d0.png)
 
-![image](https://user-images.githubusercontent.com/49078266/187940750-d17f896e-889f-4fb9-95d1-6d44937ccc90.png)
 
 ## Navigation
 + Mobile Price Classification Project.ipynb
